@@ -6,3 +6,4 @@ Created on Thu Jan 26 18:02:15 2023
 @author: brunykrijgsman
 """
 
+print("Hello world")
