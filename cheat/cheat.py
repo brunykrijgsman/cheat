@@ -21,8 +21,7 @@ def cheat(assignment):
     if (not type(assignment) == str):
         raise Exception("The input must be a 'string'.")
     elif (assignment == "1.2P.10"):
-        print(
-        """
+        return """
             np.random.seed(1234) # Set the random seed.
             speed_sec = np.zeros(10)
             sim_speed = np.random.uniform(size=5) # Speed simulation in seconds 
@@ -43,10 +42,8 @@ def cheat(assignment):
             my_dataframe = pd.DataFrame.from_dict(dict) 
             print(my_dataframe))
         """
-        )
     elif (assignment == "2.2P.1"):
-        print(
-        """
+        return """
             # Creating time variable
             current_time = int(time.strftime("%H"))
     
@@ -58,45 +55,40 @@ def cheat(assignment):
             else:
                 print("Gut gemacht")
         """
-        )
     elif (assignment == "2.2P.2"):
-        print(
-            """
-                # Numeric vector of four elements
-                numeric_vec = np.random.uniform(low=0, high=100, size=4)
-                weight_sum = 2*0
-    
-                for i in range(len(numeric_vec)):
-                    if i%2 == 0:
-                        weight_sum = weight_sum + numeric_vec[i] 
-                    else: 
-                        weight_sum = weight_sum + numeric_vec[i] * 2
-                    
-    
-                weight_avg = weight_sum / (np.size(numeric_vec) * 1.5)
-                print(weight_avg)
-            """
-            )
+        return """
+            # Numeric vector of four elements
+            numeric_vec = np.random.uniform(low=0, high=100, size=4)
+            weight_sum = 2*0
+
+            for i in range(len(numeric_vec)):
+                if i%2 == 0:
+                    weight_sum = weight_sum + numeric_vec[i] 
+                else: 
+                    weight_sum = weight_sum + numeric_vec[i] * 2
+                
+
+            weight_avg = weight_sum / (np.size(numeric_vec) * 1.5)
+            print(weight_avg)
+        """
     elif (assignment == "2.2P.4"):
-            print(
-            """
-                input = np.array([1,2,5,6,2,2,1,6,5,7])
-    
-                def special(input):
-                    my_unique_values = []
-                    if (isinstance(input, np.ndarray) == False):
-                        raise Exception("The input is not a 'numpy vector'.")
-                    for i in input:
-                        if (not i in my_unique_values):
-                            my_unique_values = np.append(my_unique_values, i)
-                        if (len(input) == len(my_unique_values)):
-                            warnings.warn(" All values are special!")
-                    return my_unique_values
-    
-                uniq = special(input)
-                print(uniq)
-            """
-            )
+        return """
+            input = np.array([1,2,5,6,2,2,1,6,5,7])
+
+            def special(input):
+                my_unique_values = []
+                if (isinstance(input, np.ndarray) == False):
+                    raise Exception("The input is not a 'numpy vector'.")
+                for i in input:
+                    if (not i in my_unique_values):
+                        my_unique_values = np.append(my_unique_values, i)
+                    if (len(input) == len(my_unique_values)):
+                        warnings.warn(" All values are special!")
+                return my_unique_values
+
+            uniq = special(input)
+            print(uniq)
+        """
 
 
     
