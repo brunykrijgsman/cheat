@@ -99,8 +99,5 @@ def cheat(assignment):
             )
 
 
-
-cheat("2.2P.4")
-
     
         

@@ -9,7 +9,7 @@ setup(
     author='Bruny Krijgsman',
     author_email='bruny.krijgsman@student.uva.nl',
     # Needed to actually package something
-    packages=['src'],
+    packages=['cheat'],
     # Needed for dependencies
     install_requires=[],
     # *strongly* suggested for sharing
