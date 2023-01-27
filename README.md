@@ -1,1 +1,1 @@
-# cheat
+# cheatPackage made for the course Programming in Psychological Science 2023. This package can be used as a cheat sheet, it returns the solution for a selection of programming exercises.## Installation```bashpip install git+https://github.com/brunykrijgsman/cheat#egg=cheat```## ExampleThe cheat function only accepts a single string argument containing the exercise number.```pythonfrom cheat import cheatprint(cheat.cheat("1.2P.10"))```
